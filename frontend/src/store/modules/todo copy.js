@@ -68,7 +68,6 @@ export function todoReducer(state = initialState, action) {
               done: true, // done값 덮어쓰기
             };
           } else return todo;
-          return todo;
         }),
       };
     default:

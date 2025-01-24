@@ -1,0 +1,91 @@
+.ListContainer {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+section {
+  &.Done {
+    border: 2px solid white;
+    background-color: rgb(168, 72, 168);
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  }
+
+  &.Todo {
+    border: 2px solid white;
+    background-color: rgb(168, 72, 168);
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  }
+
+  & button {
+    border-radius: 7px;
+  }
+
+  & h3 {
+    background-color: rgb(216, 191, 216);
+    margin: 20px 70px;
+    border-radius: 5px;
+  }
+}
+
+.li {
+  &.done {
+    padding: 7px;
+    text-decoration: underline red;
+  }
+  &.todo {
+    padding: 7px;
+    text-decoration: underline white;
+  }
+  & > .fire {
+    background-color: red;
+    width: 30px;
+    height: 20px;
+    border-radius: 20%;
+  }
+}
+.ul {
+  &.done {
+    padding: 0 0 0 0;
+    background-color: rgb(216, 191, 216);
+    color: black;
+    border-radius: 10px;
+    margin: 10px 25px;
+  }
+  &.todo {
+    padding: 0 0 0 0;
+    background-color: rgb(216, 191, 216);
+    color: black;
+    border-radius: 10px;
+    margin: 10px 25px;
+  }
+}
+
+// section.Todo {
+//   border: 2px solid purple;
+//   background-color: rgb(216, 191, 216);
+//   border-radius: 10px;
+//   width: 50%;
+//   height: auto;
+//   margin: 10px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+// }
+
+ul,
+ol {
+  list-style: none;
+  text-align: start;
+}

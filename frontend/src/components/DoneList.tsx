@@ -1,9 +1,10 @@
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSelector } from "react-redux";
+import { ReduxState } from "../types/types";
 
 export default function DoneList() {
-  let doneList = useSelector((state) => state.todo.list);
+  let doneList = useSelector((state: ReduxState) => state.todo.list);
 
   doneList = doneList.filter((done) => done.done === true);
   return (

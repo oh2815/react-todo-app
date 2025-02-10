@@ -12,11 +12,12 @@ import { ReduxState, Todo } from "../types/types";
 
 export default function TodoList() {
   // useSelector()를 통해서 store의 state가져오기
-  let todoList = useSelector((state: ReduxState) => state.todo.list);
-  // console.log(todoList); // Object - 객체가 받아짐 // 원하는정보는 Object 안의 list 배열.
+  let todoList: any[] = useSelector((state: ReduxState) => state.todo.list);
+  // console.log("투두 리스투", todoList); // Object - 객체가 받아짐 // 원하는정보는 Object 안의 list 배열.
 
   todoList = todoList.filter((todo: Todo) => todo.done === false);
 
+  console.log("here!", todoList);
   const nextID = useSelector((state: ReduxState) => state.todo.nextID);
   // useDispatch()를 통해서  dispatch 함수 생성
   const dispatch = useDispatch();
